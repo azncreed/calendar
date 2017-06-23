@@ -16,6 +16,15 @@
     <%= form.text_field :name, id: :advisor_name %>
   </div>
 
+
+
+  <div class="field">
+    <%= form.label :recurring %>
+    <%= form.select_recurring :recurring, nil, allow_blank: true %>
+  </div>
+
+
+
   <div class="field">
     <%= form.label :date %>
     <%= form.date_select :date, id: :advisor_date %>
